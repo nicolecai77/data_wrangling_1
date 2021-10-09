@@ -101,3 +101,13 @@ mutate(
   group = str_to_lower(group))
 ```
 
+
+##`arrange`
+
+```{r}
+arrange(litters_df,pups_born_alive)   #arrange by numberable order 
+```
+
+
+
+
