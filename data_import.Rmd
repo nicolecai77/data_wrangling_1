@@ -51,6 +51,16 @@ Read in a SAS file.
 
 ```{r}
 pulse_df = read_sas("./data/public_pulse_data.sas7bdat")
-pulse_df
+pulse_data = janitor::clean_names(pulse_df)
+```
+
+##comparison with Base R
+
+what about `read.csv`...?
+```{r}
+litters_base = read.csv(file = "./data/FAS_litters.csv")
+litters_reader = read_csv(file = "./data/FAS_litters.csv")
+litters_base
+litters_reader
 ```
 
